@@ -12,7 +12,7 @@ nav{
 
 nav ul{
     display: flex;
-    margin-left: 8%;
+    margin-left: 4%;
     list-style: none;
     cursor: pointer;
     margin-top: 30px;
@@ -40,6 +40,14 @@ nav ul{
         padding: 15px;
         left: 30%;
 }
+
+
+.second-nav img{
+    margin-left: 20%;
+    
+} 
+
+
 
 .second-nav p{
     display: inline-block;
@@ -74,6 +82,7 @@ nav ul{
     width: 100%;
     height: 100%;
     background-image: url(./images/Background-img.jpg);
+    background-size: auto;
 
 
 }
@@ -153,6 +162,10 @@ background-color: #f1f7ee;
     display: flex;
 }
 
+/* .bigImg img{
+    margin-left: 0px;
+} */
+
 .boldText{
     font-family: heebo;
     font-size: 50px;
@@ -160,8 +173,9 @@ background-color: #f1f7ee;
     margin-top: 2%;
 }
 .include img{
-    margin-left: 10%;
+    /* margin-left: 10%; */
     border-radius: 20px;
+    background-image: url(./images/aboutUsImg.svg);
 }
 
 .bookings ul{
@@ -235,7 +249,8 @@ background-color: #f1f7ee;
     display: flex;
     align-items: center; 
     justify-content: center; 
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    padding: 10%;
 }
 
 .appdetails{
@@ -253,7 +268,7 @@ background-color: #f1f7ee;
 }
 
 .access{
-    padding: 50px;
+    padding: 10px;
 }
 
 .access1{
@@ -295,9 +310,9 @@ background-color: #f1f7ee;
 
 .contact{
     padding: 8%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-left: 10%;
-    margin-right: -10%;
+    /* margin-right: -10%; */
 }
 
 .contactli{
@@ -335,7 +350,7 @@ background-color: #f1f7ee;
 .contact101{
     /* padding: 30px; */
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
     border-radius: 10px;
    /* width: 109%;  */
 }
@@ -370,7 +385,7 @@ background-color: #f1f7ee;
 .qrcode p{
     color: #f1f7ee;
     font-family: heebo;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 20px;
     /* width: 70px; */
 }
@@ -386,7 +401,7 @@ background-color: #f1f7ee;
 }
 
 .appstore{
-    margin-top: 6%;
+    margin-top: 8%;
 
 }
 
@@ -404,12 +419,13 @@ background-color: #f1f7ee;
 .sec{
     display: flex;
     margin-top: 10%;
-    /* width: 70% */
+    /* width: 70%;
     align-items: center;
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    justify-content: center; */
+    /* margin-left: 10%; */
+    margin-right:2%;
     margin-bottom: 10%;
+
 }
 
 .sec1, .sec2 , .sec3{
@@ -468,7 +484,7 @@ background-color: #f1f7ee;
 }
 
 .partners li{
-    padding: 50px;
+    padding: 30px;
     margin-top: 30px;
 }
 
@@ -536,14 +552,14 @@ background-color: #f1f7ee;
     margin-top: 5%;
  }
 
- .countries{
-        width: 50%;
-        padding: 31px;
-        display: flex;
-        gap: 13%;
-        font-family: heebo;
-        text-align: center;
-        font-size: 20px;
+ .countries{    /* width: 50%; */
+    /* padding: 31px; */
+    display: flex;
+    gap: 2%;
+    font-family: heebo;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
  }
 
  footer{
@@ -606,4 +622,196 @@ background-color: #f1f7ee;
     border-radius: 10px;
  }
 
- 
+@media only screen and (max-width: 500px){
+
+    nav ul{
+        display: block;
+        margin-top: 25px;
+    }
+    .secondsec{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 100%;
+    }
+
+    .right-nav ul{
+        margin-top: 5px;
+    }
+
+    .second-nav li{
+        padding: 5px;
+        /* width: 50%; */
+    }
+
+    .border{
+        display: block;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .border li{
+        border-radius: 10px;
+    }
+
+    .include{
+        display: block;
+        font-size: 10px;
+    }
+
+    .include img{
+        display: none;
+    }
+
+    .boldText{
+        font-size: 25px;
+    }
+
+    .bookings ul{
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    
+    .appdetails{
+        display: block;
+        padding: 0px;
+    }
+    .one ,.two,.three{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .one, .two ,.three ,.lastsec{
+        padding: 0px;
+    }
+
+    .rating{
+        display: block;
+        padding: 0px;
+    }
+
+    .bookBtn{
+        width: auto;
+       margin-left: 25%;
+    }
+
+    .flex1{
+        display: flex;
+    }
+     
+    .access{
+        padding: 30px;
+    }
+    .access1{
+        width: 100%;
+    }
+
+    .cont{
+        margin-left: 0px;
+    }
+
+    .qrcode{
+        gap: 0px;
+        padding: 0px;
+    }
+
+    .appstore{
+        display: none;
+    }
+
+    .contact{
+        padding: 0px;
+    }
+
+    .contact1{
+        display: none;
+    }
+
+    .primo{
+        display: none;
+    }
+
+    .sec{
+        display: block;
+    }
+
+    .sec1, .sec2, .sec3{
+        padding: 10px;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .partners li{
+        display: none;
+    }
+
+    .government button{
+        margin-left: 10%;
+        /* padding: 10px; */
+        border-radius: 20px;
+        border: 1px solid black;
+        cursor: pointer;
+        font-family: heebo;
+        font-size: 15px;
+         width: auto; 
+    }
+
+    .travel{
+        display: none;
+    }
+
+    .realted ul{
+        display: block;
+    }
+    .details{
+        padding: 0px;
+    }
+
+    .ques{
+        margin-top: 25px;
+    border: 0.5px solid black;
+    display: flex;
+    /* width: 70%; */
+    /* height: 5%; */
+    padding: 3px;
+    border-radius: 10px;
+    /* text-align: center; */
+    /* position: absolute;*/
+    }
+
+    .ques p{
+        font-size:10px
+        }
+    
+    .countries{
+        display: block;
+    }
+
+    .countries img{
+        width: 10%;
+        height: 10%;
+    }
+
+    .transSer{
+        padding: 20%;
+    }
+
+    .lastFoot{
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .socials{
+        display: block;
+        margin-left: 15%;
+    }
+
+    .socials p{
+        margin-left: 15%;
+        margin-bottom: 10px;
+    }
+
+}
