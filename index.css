@@ -493,6 +493,35 @@ background-color: #f1f7ee;
     display: flex;
 }
 
+.privateB{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: heebo;
+    font-size: 30px;
+}
+
+.privateBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: heebo;
+    font-size: 20px;
+    padding:10px
+}
+
+.privateBtn button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.privateBtn button:hover{
+    background-color: antiquewhite;
+}
+
 
 .faq{
     margin-top: 10%;
@@ -591,6 +620,7 @@ background-color: #f1f7ee;
     gap: 10%;
     margin-top: 10%;
     margin: 3%;
+    font-family: heebo;
  }
  .lastFoot li{
     list-style: none;
@@ -606,6 +636,7 @@ background-color: #f1f7ee;
     align-items: center;
     justify-content: center;
     gap: 60%;
+    background-color:#f1f7ee ;
  }
 
 
