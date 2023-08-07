@@ -837,12 +837,17 @@ background-color: #f1f7ee;
 
     .socials{
         display: block;
-        margin-left: 15%;
     }
 
     .socials p{
-        margin-left: 15%;
+        margin-left: 35%;
         margin-bottom: 10px;
+    }
+
+    .socials ul{
+        display: flex;
+    align-items: center;
+    justify-content: center
     }
 
 }
