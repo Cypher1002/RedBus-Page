@@ -192,7 +192,7 @@ background-color: #f1f7ee;
 .one img{
     width: 20px;
     height: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .two{
@@ -202,7 +202,7 @@ background-color: #f1f7ee;
 .two img{
     width: 20px;
     height: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .three{
@@ -213,7 +213,7 @@ background-color: #f1f7ee;
 .three img{
     width: 20px;
     height: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 
@@ -384,6 +384,7 @@ background-color: #f1f7ee;
     height: 100%;
     border: none;
     outline: none;
+    margin-left: 10px;
 }
 
 .cont{
@@ -432,6 +433,7 @@ background-color: #f1f7ee;
     border: none;
     background-color: #f1f7ee;
     outline: none;
+    margin-left: 10px;
 }
 .contact1{
     border-radius: 10px 0 0 10px;
