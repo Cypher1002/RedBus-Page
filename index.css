@@ -15,17 +15,17 @@ nav ul{
     margin-left: 4%;
     list-style: none;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .logo-img{
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .second-nav{
     align-items: center;
-    margin-top: -30px;
-    margin-left: 4%;
+    margin-top: -15px;
+    margin-left: 10%;
     cursor: pointer;
 }
 
@@ -43,29 +43,31 @@ nav ul{
 
 
 .second-nav img{
-    margin-left: 20%;
-    
+    margin-left: 10%;
 } 
-
-
 
 .second-nav p{
     display: inline-block;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Heebo;
 }
 
 .right-nav{
-    margin-left: 20%;
+    margin-left: 18%;
+    margin-top: 10px;
 }
 .right-nav li{
+    display: flex;
     padding: 10px;
-   margin: 0 20px;
    border-radius: 10px;
    font-size: 20px;
    font-family: heebo;
 }
 
+.right-nav img{
+    height: 50%;
+    width: 70%;
+}
 .border{
     display: flex;
     width: 100%;
@@ -101,13 +103,13 @@ nav ul{
     height: auto;
     align-items: center;
     justify-content: center;
-    margin: 30px;
+    margin: 10px;
 }
 
 .secondsec p{
     font-family: heebo;
     font-size: 20px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .lastsec{
@@ -117,12 +119,69 @@ nav ul{
    color: white;
 }
 
+
+
+.img1{
+    width: 30%;
+    height: 30%;
+    margin-top: 10%;
+}
+
+
 .border input{
     border: none;
     height: 30px;
     margin-top: 10px;
-    /* outline: none; */
+    outline: none;
     background-color: #f1f7ee;
+}
+
+.first{
+    display: flex;
+    padding: 10px;
+    gap: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Bblock{
+    display: block;
+    padding: 10px;
+}
+
+.Ffirst{
+    background-color: aliceblue;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carousel-control-next-icon{
+    background-color: black;
+}
+
+.carousel-control-prev-icon{
+    background-color: black;
+}
+
+
+.Ffirst h3{
+     font-size: 15px;
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+}
+
+.btn1 button{
+    border: dashed;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px
+}
+
+.BTN2{
 }
 
 .one{
