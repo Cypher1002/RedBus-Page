@@ -28,6 +28,7 @@ nav ul{
     cursor: pointer;
 }
 
+
 .second-nav li:hover{
     height: 20%;
     background: #f1f7ee;
@@ -196,39 +197,59 @@ nav ul{
     font-size: 10px
 }
 
-.BTN2{
-}
 
 .one{
 background-color: #f1f7ee;
- padding: 20px;
+ padding: 13px;
  border-radius: 10px 0 0 10px;
 }
 .one img{
     width: 20px;
     height: 20px;
-    margin-top: 5px;
+    margin-top: 15px;
+}
+
+.one p{
+    margin: 10px;
 }
 
 .two{
     background-color: #f1f7ee;
-    padding: 20px;
+    padding: 10px;
 }
 .two img{
     width: 20px;
     height: 20px;
-    margin-top: 5px;
+    margin-top: 15px;
+}
+
+.two p{
+    margin: 13px;
 }
 
 .three{
     background-color: #f1f7ee;
-    padding: 20px; 
+    padding: 17px; 
+    
 }
 
 .three img{
     width: 20px;
     height: 20px;
-    margin-top: 5px;
+    margin-top: 15px;
+}
+
+.three p{
+    margin: 11px 14px 0 0;
+}
+
+.lastsec button{
+    background: #e63946;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 
@@ -455,8 +476,9 @@ background-color: #f1f7ee;
 }
 .contact1{
     border-radius: 10px 0 0 10px;
-    height: 30%;
+    /* height: 30%; */
     padding: 10px;
+    margin-top: 15px;
     font-family: heebo;
 } 
 
@@ -697,17 +719,21 @@ background-color: #f1f7ee;
     align-items: center;
     justify-content: center;
     gap: 10%;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     /* margin: 3%; */
     font-family: heebo;
+    padding: 10%;
  }
  .lastFoot li{
     list-style: none;
     /* padding: 3px; */
  }
 
- .compInfo{
-    /* width: 20%; */
+ .compInfo ul{
+    padding: 0px;
+ }
+ .compInfo img{
+    margin-bottom: 10%;
  }
 
  .socials{
@@ -739,10 +765,15 @@ background-color: #f1f7ee;
         margin-top: 25px;
     }
     .secondsec{
-        display: flex;
+        display: block;
         align-items: center;
         justify-content: center;
         background-size: 100%;
+    }
+
+    .secondsec p{
+        font-size: 10px;
+        /* padding: 10px; */
     }
 
     .right-nav ul{
@@ -761,8 +792,21 @@ background-color: #f1f7ee;
         justify-content: center;
     }
 
+    .border input{
+        margin-top: 0px;
+    }
+
     .border li{
         border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .one img{
+        margin-top: 5px;
+    }
+    .two img{
+        margin-top: 5px;
     }
 
     .include{
@@ -782,10 +826,40 @@ background-color: #f1f7ee;
         margin-bottom: 10px;
         margin-left: 0px;
     }
+
+    .bookings p{
+        font-size: 15px;
+        padding: 0px;
+    }
+    .book2 li{
+        padding: 0px;
+        display: flex;
+        font-size:auto;
+    }
+
+    .book1{
+        font-size: 10px;
+    }
+
+    .privateB{
+       font-size: 20px;
+    }
+
+    .book2{
+        margin-top: 10%;
+    }
     
     .appdetails{
         display: block;
         padding: 0px;
+    }
+
+    .carousel{
+        background: aliceblue;
+    }
+
+    .first{
+        background-color: none;
     }
     .one ,.two,.three{
         display: flex;
@@ -804,11 +878,15 @@ background-color: #f1f7ee;
 
     .bookBtn{
         width: auto;
-       margin-left: 25%;
+        font-size: 10px;
+       margin-left: 20%;
     }
 
     .flex1{
         display: flex;
+    }
+    .flex1 p{
+        font-size: 10px;
     }
      
     .access{
@@ -820,6 +898,7 @@ background-color: #f1f7ee;
 
     .cont{
         margin-left: 0px;
+        padding: 5px;
     }
 
     .qrcode{
@@ -905,7 +984,9 @@ background-color: #f1f7ee;
     }
 
     .transSer{
+        /* display: block; */
         padding: 20%;
+        font-size: 10px;
     }
 
     .lastFoot{
@@ -926,7 +1007,8 @@ background-color: #f1f7ee;
     .socials ul{
         display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    margin-bottom: 0px;
     }
 
 }

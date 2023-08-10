@@ -51,7 +51,10 @@
             </li>
 
             <li>
-              <img src="./images/icons8-account-48.png" alt="">
+              <div class="acc">
+                <img src="./images/icons8-account-48.png" alt="">
+              </div>
+             
               <p>Account </p>
             </li>
           </ul>
@@ -62,13 +65,13 @@
 
   <section class="secondsec">
     <ul class="secondsec">
-      <div class="border">
-        <li class="one">
+      <form class="border">
+          <li class="one">
           <img src="./images/bus-icon.png" alt="bus">
           <span>
             <p>From</p>
           </span>
-          <input type="text">
+          <input type="text" id="from" placeholder="Enter city">
         </li>
 
         <li class="two">
@@ -76,7 +79,7 @@
           <span>
             <p>To</p>
           </span>
-          <input type="text">
+          <input type="text" id="to"  placeholder="Enter city">
         </li>
 
         <li class="three">
@@ -84,14 +87,17 @@
           <span>
             <p>Date</p>
           </span>
+          <input type="date" name="" id="date">
         </li>
         <li class="lastsec">
           <span>
-            <p>Search Busses</p>
+            <button id="btna">
+              search busses
+            </button>
           </span>
         </li>
-
-      </div>
+   
+      </form>
 
     </ul>
     <div id="carouselExample" class="carousel slide">
@@ -728,7 +734,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="compInfo">
         <p>
           <b>About RedBus</b>
         </p>
@@ -754,7 +760,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="compInfo">
         <p><b>Info</b></p>
         <ul>
           <li>
@@ -778,7 +784,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="compInfo">
         <p><b>Global Sites</b></p>
         <ul>
           <li>
@@ -802,7 +808,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="compInfo">
         <p><b>Our Partners</b></p>
         <ul>
           <li>
@@ -847,6 +853,9 @@
       </div>
     </div>
   </footer>
+
+    <script src="./index.js"></script> 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>

@@ -1,7 +1,20 @@
-const slide = document.querySelector(".carosel");
-currentIndex = 0;
+let details=[];
 
+const addDetails = (e) =>{
+    e.preventDefault();
+    let detail = {
+        from: document.getElementById('from').value,
+        To: document.getElementById('to').value,
+        Date: document.getElementById('date').value
+    }
+    details.push(detail);
+     document.forms[0].reset();
 
-function slideTo(index){
-    slide.computedStyleMap.transform
+     console.log({details})
 }
+
+
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    document.getElementById('btna').addEventListener('click', addDetails)
+})
