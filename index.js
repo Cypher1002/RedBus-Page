@@ -37,9 +37,6 @@ function showCard(){
         </div>
       </div>
         `
-        data1.innerText = details[i].from
-        data2.innerText = details[i].To;
-        console.log(details[i].Date);
     }
     let datael = document.getElementById('firstOne');
     datael.innerHTML= html;
