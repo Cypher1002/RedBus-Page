@@ -28,7 +28,6 @@ nav ul{
     cursor: pointer;
 }
 
-
 .second-nav li:hover{
     height: 20%;
     background: #f1f7ee;
@@ -511,7 +510,7 @@ background-color: #f1f7ee;
 }
 
 .primo{
-    margin-top: 10%;
+    /* margin-top: 10%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -524,7 +523,6 @@ background-color: #f1f7ee;
     align-items: center;
     justify-content: center; */
     /* margin-left: 10%; */
-    margin-right:2%;
     margin-bottom: 10%;
 
 }
@@ -533,7 +531,7 @@ background-color: #f1f7ee;
     display: flex;
     background-image: linear-gradient(to right, rgb(38, 72, 153), rgb(125, 70, 134));
     padding: 20px;
-    margin-left: 30px;
+     margin: 10px;
     border-radius: 10px;
 }
 .secdetails1, .secdetails2, .secdetails3{
@@ -762,10 +760,16 @@ background-color: #f1f7ee;
 
     nav ul{
         display: block;
+        overflow: hidden;
         margin-top: 25px;
     }
+
+    .burger #my-link{
+        display: none;
+        overflow: hidden;
+    }
     .secondsec{
-        display: block;
+        /* display: block; */
         align-items: center;
         justify-content: center;
         background-size: 100%;

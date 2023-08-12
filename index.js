@@ -51,3 +51,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
 //  for(var i = 0 ;i<details.length;i++){
 //         console.log(details[i].from);
 //     }
+
+function myFunction(){
+    var x =  document.getElementById("my-link");
+    if (x.style.display==="none") {
+        x.style.display= "block";
+
+    }else{
+        x.style.display="none";
+    }
+}
