@@ -13,12 +13,16 @@
 <body>
   <nav class="nav-bar">
     <div>
+      <div class="burger-icon">
+        <img src="./images/icons8-menu-30.png" alt="" onclick="myFunction()">
+      </div>
+
       <ul>
         <li class="logo-img">
-          <img src="./images/rdc-redbus-logo.svg" alt="redbus-img" onclick="myFunction()"  />
+          <img src="./images/rdc-redbus-logo.svg" alt="redbus-img" />
         </li>
-       <div class="burger"  id="my-link" >
-        <div class="second-nav">
+        <div class="close"  id="my-link">
+        <div class="second-nav" id="my-link">
           <ul >
             <li>
               <img src="./images/nav-img-2.svg" alt="#" />
@@ -52,15 +56,15 @@
 
             <li>
               <div class="acc">
-                <img src="./images/icons8-account-48.png" alt="">
+                <img src="./images/icons8-account-48.png" alt="" >
               </div>
              
               <p>Account </p>
             </li>
           </ul>
         </div>
-      </div>
       </ul>
+      </div>
     </div>
   </nav>
 
@@ -97,14 +101,13 @@
             </button>
           </span>
         </li>
-   
       </form>
-
+      <p id="msgdisplay"> </p>
     </ul>
     <div id="carouselExample" class="carousel slide">
 
       <div class="carousel-inner">
-       <div class="offers">   <p>TRENDING OFFERS</p></div>
+       <div class="offers">   <p>PREVIOUS SEARCH</p></div>
         <div class="carousel-item active">
 
           <div id="firstOne" class="first">
