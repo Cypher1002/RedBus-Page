@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="./index.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
   <title>Document</title>
 </head>
 
@@ -68,32 +72,49 @@
     </div>
   </nav>
 
-  <section class="secondsec">
+  <section class="secondsec" >
     <ul class="secondsec">
-      <form class="border">
-          <li class="one">
+      <form name="myForm" >
+        <div class="er1">
+           <div class="erfrom">
+            <span class="errfrom" id="from-err"></span>
+           </div>
+
+           <div class="erto">
+            <span class="errto"  id="to-err"></span>
+           </div>
+
+           <div class="erdate">
+            <span  class="" id="date-err"></span>
+           </div>
+        </div>
+        <div class="border">
+          <div class="one">  
+            <div class="err">
+            </div>
           <img src="./images/bus-icon.png" alt="bus">
           <span>
-            <p>From</p>
+            <p>From</p>   
           </span>
-          <input type="text" id="from" placeholder="Enter city">
-        </li>
-
-        <li class="two">
+          <input type="text" id="from" name="from1" placeholder="Enter city">
+        </div>
+ 
+        <!-- <sub id="to-error"></sub> -->
+        <div class="two">
           <img src="./images/bus-icon.png" alt="bus">
           <span>
             <p>To</p>
           </span>
-          <input type="text" id="to"  placeholder="Enter city">
-        </li>
+          <input type="text" id="to" name="to1"  placeholder="Enter city">
+        </div>
 
-        <li class="three">
+        <div class="three">
           <!-- <img src="./images/calendar.png" alt="calendar">
           <span>
             <p>Date</p>
           </span> -->
-          <input type="date" name="" id="date">
-        </li>
+          <input type="date" name="date1" id="date">
+        </div>
         <li class="lastsec">
           <span>
             <button id="btna">
@@ -101,168 +122,29 @@
             </button>
           </span>
         </li>
-      </form>
-      <p id="msgdisplay"> </p>
-    </ul>
-    <div id="carouselExample" class="carousel slide">
-
-      <div class="carousel-inner">
-       <div class="offers">   <p>PREVIOUS SEARCH</p></div>
-        <div class="carousel-item active">
-
-          <div id="firstOne" class="first">
-            <div class="Ffirst">
-              <!-- <div class="img1">
-                <img src="./images/coupon.png" class="d-block w-100" alt="...">
-              </div> -->
-              
-            </div>
-            <!-- <div class="Ffirst">
-              <div class="img1">
-                <img src="./images/coupon.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="Bblock">
-                <p>
-                <h3>save upto Rs 250 on bus tickets </h3>
-                <sub>valid till 31 Aug</sub></p>
-
-                <div class="btns">
-                  <div class="btn1">
-                    <button>
-                      FIRST
-                    </button>
-                  </div>
-
-                  <DIV class="BTN2">
-                    <img src="./images/copy.svg" alt="">
-                  </DIV>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div> -->
-
-
-
-        <!-- <div class="carousel-item"> -->
-         
-          <!-- <div class="first">
-            <div class="Ffirst">
-              <div class="img1">
-                <img src="./images/coupon.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="Bblock">
-                <p>
-                <h3>save upto Rs 250 on bus tickets </h3>
-                <sub>valid till 31 Aug</sub></p>
-
-                <div class="btns">
-                  <div class="btn1">
-                    <button>
-                      FIRST
-                    </button>
-                  </div>
-
-                  <DIV class="BTN2">
-                    <img src="./images/copy.svg" alt="">
-                  </DIV>
-
-                </div>
-              </div>
-            </div> -->
-
-
-            <!-- <div class="Ffirst">
-              <div class="img1">
-                <img src="./images/coupon.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="Bblock">
-                <p>
-                <h3>save upto Rs 250 on bus tickets </h3>
-                <sub>valid till 31 Aug</sub></p>
-
-                <div class="btns">
-                  <div class="btn1">
-                    <button>
-                      FIRST
-                    </button>
-                  </div>
-
-                  <DIV class="BTN2">
-                    <img src="./images/copy.svg" alt="">
-                  </DIV>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div> -->
-        <!-- <div class="carousel-item">
-          <div class="first">
-            <div class="Ffirst">
-              <div class="img1">
-                <img src="./images/coupon.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="Bblock">
-                <p>
-                <h3>save upto Rs 250 on bus tickets </h3>
-                <sub>valid till 31 Aug</sub></p>
-
-                <div class="btns">
-                  <div class="btn1">
-                    <button>
-                      FIRST
-                    </button>
-                  </div>
-
-                  <DIV class="BTN2">
-                    <img src="./images/copy.svg" alt="">
-                  </DIV>
-
-                </div>
-              </div>
-            </div> -->
-
-
-            <!-- <div class="Ffirst">
-              <div class="img1">
-                <img src="./images/coupon.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="Bblock">
-                <p>
-                <h3>save upto Rs 250 on bus tickets </h3>
-                <sub>valid till 31 Aug</sub></p>
-
-                <div class="btns">
-                  <div class="btn1">
-                    <button>
-                      FIRST
-                    </button>
-                  </div>
-
-                  <DIV class="BTN2">
-                    <img src="./images/copy.svg" alt="">
-                  </DIV>
-
-                </div>
-              </div>
-            </div> -->
-
-          </div>
-        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      </form>
+    </ul>
+    <!-- <div id="carouselExample" class="carousel slide"> -->
+
+      <!-- <div class="carousel-inner"> -->
+       <div class="offers">
+
+        <div class="cl">
+          <button  class="cl"   onclick="clr()" id="clear">clear all data</button>
+        </div>
+        <div class="psearch">
+          <p id="psearch"></p>
+        </div>
+        <!-- <div class="carousel-item active"> -->
+          <div class="first">
+            <div   id="firstOne" class="Ffirst">   
+             
+           
+            </div>
+          </div>
+        <!-- </div> -->
+      <!-- </div> -->
     </div>
   </section>
 

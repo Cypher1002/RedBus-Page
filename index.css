@@ -33,6 +33,7 @@ nav ul{
     cursor: pointer;
 }
 
+
 .second-nav li:hover{
     height: 20%;
     background: #f1f7ee;
@@ -79,8 +80,7 @@ nav ul{
 .border{
     display: flex;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 .right-nav li:hover{
@@ -93,18 +93,35 @@ nav ul{
     height: 100%;
     background-image: url(./images/Background-img.jpg);
     background-size: auto;
-
+    padding: 6%;
 
 }
-.border li{
+/* .border li{
     display: flex;
     margin-top: 10%;
     margin-bottom: 10%;
     
   /* align-items: center;
     justify-content: center;   */
+
+
+.f1{
+    display:flex;
 }
 
+.cl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cl button{
+    background-color: #e63946;
+    color: white;
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+}
 
 .secondsec ul{
     width: auto;
@@ -112,6 +129,7 @@ nav ul{
     align-items: center;
     justify-content: center;
     margin: 10px;
+    background-image: none;
 }
 
 .secondsec p{
@@ -127,6 +145,32 @@ nav ul{
    color: white;
 }
 
+.msg p{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.er1{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 10%;
+}
+
+ .erfrom{
+    display: flex;
+    align-items: flex-start;
+    left: 0;
+}
+
+.erto{
+    /* margin-left: 20%; */
+} 
+
+.erdate{
+   /* margin-left: 15%; */
+} */
 
 
 .img1{
@@ -145,33 +189,48 @@ nav ul{
     background-color: #f1f7ee;
 }
 
+
 .first{
     display: flex;
-    padding: 33px;
-    gap: 8%;
+    /* padding: 33px; */
+    gap: 5%;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
-    background-color:  #FFF3F0;
+    /* background-color:  #FFF3F0; */
     /* padding: 17px; */
     /* margin-left: 20px; */
     border-radius: 10px;
 }
+.err{
+    display: block;
+}
 
-.offers p{
+/* .offers{
+    display: flex;
+} */
+
+/* .offers p{
     font-size: 30px;
     margin-left: 5%;
-}
+} */
 
 .Bblock{
     display: block;
-    padding: 10px;
+    padding: 10px; 
+    background-color:#c4e0f9; 
 }
 
-.Ffirst{
-    background-color:#c4e0f9;;
+.psearch{
     display: flex;
-    padding: 10px;
-    border-radius: 10px;
+
+}
+.Ffirst{
+    display: flex;
+    /* padding: 10px; */
+    /* border-radius: 10px; */
+    overflow: hidden;
+    gap: 3%;
 }
 
 .carousel-control-next-icon{
@@ -206,11 +265,13 @@ nav ul{
 background-color: #f1f7ee;
  padding: 13px;
  border-radius: 10px 0 0 10px;
+ display: flex;
 }
 .one img{
     width: 20px;
     height: 20px;
     margin-top: 15px;
+    display: flex;
 }
 
 .one p{
@@ -220,12 +281,14 @@ background-color: #f1f7ee;
 .two{
     background-color: #f1f7ee;
     padding: 10px;
+    display: flex;
 }
 .two img{
     width: 20px;
     height: 20px;
     margin-top: 15px;
 }
+
 
 .two p{
     margin: 13px;
@@ -234,7 +297,7 @@ background-color: #f1f7ee;
 .three{
     background-color: #f1f7ee;
     padding: 18px; 
-    
+    display: flex;
 }
 
 .three img{
