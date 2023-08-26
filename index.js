@@ -1,3 +1,32 @@
+function api(){
+    fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
+.then((res) => {
+   return res.json();
+}
+)
+.then((data)=>{
+    let crd = "";
+    data.forEach((values)=>{
+        crd += `
+        <div class="apiblock">
+        <p>name :${values.name}</p>
+         <p>email: ${values.email}}</p>
+         <p>body: ${values.body}</p>
+      </div>
+        `
+    });
+    document.getElementById('api').innerHTML = crd;
+
+})
+.catch( error=>{
+    console.log(error);
+})
+
+
+    
+}
+
+
 let details=[];
 const data1  = document.getElementById("data-to");
 const data2 =  document.getElementById("data-from")
@@ -16,10 +45,64 @@ const addDetails = (e) =>{
     }
          
        if(detail.from =="" && detail.from=="" && detail.Date ==""){
-             !details.push(detail)
+            //  !details.push(detail)
              fromErr.innerHTML ="*Enter To from and Date";
              fromErr.style.color = "red"
-     }   
+             return;
+     } else{
+        fromErr.innerHTML="";
+     }
+
+     
+     if(detail.To == "" && detail.Date== "" ){
+        fromErr.innerHTML = "*enter to and date ";
+        fromErr.style.color = "red"
+          return;
+    }else{
+        fromErr.innerHTML =" "
+    }
+      
+    if(detail.from == "" && detail.To== "" ){
+        fromErr.innerHTML = "*enter from and To ";
+        fromErr.style.color = "red"
+          return;
+    }else{
+        fromErr.innerHTML =" "
+    }
+
+    if(detail.from=="" && detail.Date==""){
+        fromErr.innerHTML ="enter from and date"
+        fromErr.style.color ="red";
+        return;
+    }else{
+        fromErr.innerHTML ="";
+    }
+
+     if(detail.Date == ""){
+        fromErr.innerHTML = "*enter Date";
+        fromErr.style.color = "red";
+        return;
+    }else{
+        toErr.innerHTML =" ";
+    }
+
+    if(detail.To == ""){
+        fromErr.innerHTML = "*enter To";
+        fromErr.style.color = "red";
+        return;
+    }else{
+        toErr.innerHTML =" ";
+    }
+
+    if(detail.from == ""){
+        fromErr.innerHTML = "*enter from";
+        fromErr.style.color = "red";
+        return;
+    }else{
+        toErr.innerHTML =" ";
+    }
+
+
 
        if(!details.some(existingDetails => existingDetails.from === detail.from
          &&
@@ -29,49 +112,8 @@ const addDetails = (e) =>{
         showCard();
        }
 
-
-    // if(!details.includes(detail))
-    //     details.push(detail);
-
-    //  document.forms[0].reset();
-
-    //  console.log({details})
-    // for(var i = 0 ;i<details.length;i++){
-    //     data1.innerText = details[i].from
-    //     data2.innerText = details[i].To;
-    //     console.log(details[i].Date);
-    // }
-
-    // console.log(detail)
-    // if(detail.To != "" && detail.from != "" && detail.Date!=""){
-    //     // text.innerHTML = "";
-    //   showCard();
-    // }
-   
-
-    if(detail.from == "" && detail.To=="" && detail.Date==""){
-        fromErr.innerHTML ="*Enter To from and Date";
-       fromErr.style.color = "red"
-    }else{
-        fromErr.innerHTML =""
-    }
+       api();
     
-    if(detail.To == "" && detail.Date== "" ){
-        fromErr.innerHTML = "*enetr to and date ";
-        fromErr.style.color = "red"
-    }else{
-        toErr.innerHTML =" "
-    }
-    
-    // if(detail.Date == ""){
-    //     fromErr.innerHTML ="*Enter a valid Date";
-    //     dateErr.style.color = "red"
-
-    // }else{
-    //     dateErr.innerHTML =" ";
-    // }
-  
-    //  validFrom();
 }
    
 
@@ -91,6 +133,7 @@ function showCard(){
 
 
     for(var i = 0 ;i<details.length;i++){
+       
         html +=`
         <div class="Bblock">
           <p>
@@ -109,7 +152,7 @@ function showCard(){
 
 }
 
-{/* <button id="next" onclick="next()"> next </button> */}
+
 
 function next(){
    let  block1 = document.getElementsByClassName('firstOne');
@@ -178,8 +221,9 @@ function myFunction(){
 function clr(){
     details = [];
     console.log(details);
-
+     
     showCard();
-    prev();
+    document.getElementById('form1').reset();
+    api().display = 'none';
 }
 
