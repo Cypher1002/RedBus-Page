@@ -1,29 +1,49 @@
-function api(){
-    fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
-.then((res) => {
-   return res.json();
-}
-)
-.then((data)=>{
-    let crd = "";
-    data.forEach((values)=>{
-        crd += `
-        <div class="apiblock">
-        <p>name :${values.name}</p>
-         <p>email: ${values.email}}</p>
-         <p>body: ${values.body}</p>
-      </div>
-        `
-    });
-    document.getElementById('api').innerHTML = crd;
+    function api(){
+    //     fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
+    // .then((res) => {
+    // return res.json();
+    // }
+    // )
+    // .then((data)=>{
+    //     let crd = "";
+    //     data.forEach((values)=>{
+    //         crd += `
+    //         <div class="apiblock">
+    //         <p>name :${values.name}</p>
+    //         <p>email: ${values.email}}</p>
+    //         <p>body: ${values.body}</p>
+    //     </div>
+    //         `
+    //     });
+    //     document.getElementById('api').innerHTML = crd;
 
-})
-.catch( error=>{
-    console.log(error);
-})
+    // })
+    // .catch( error=>{
+    //     console.log(error);
+    // })
+   
+    (async ()=>{
+        try{
+            const res = await fetch('https://jsonplaceholder.typicode.com/posts/1/comments');
+                const data = await res.json();
+                let crd = "";
+                data.forEach((values)=>{
+                    crd += `
+                    <div class="apiblock">
+                    <p>name :${values.name}</p>
+                    <p>email: ${values.email}}</p>
+                    <p>body: ${values.body}</p>
+                </div>
+                    `
+                });
+                document.getElementById('api').innerHTML = crd;
+        
+        }catch(error){
+            console.log(error);
+        }
+    })();
 
-
-    
+    // fetchdata();
 }
 
 
@@ -221,9 +241,11 @@ function myFunction(){
 function clr(){
     details = [];
     console.log(details);
-     
     showCard();
     document.getElementById('form1').reset();
-    api().display = 'none';
+
+   document.getElementById('api').innerHTML = "";
+
 }
 
+ 
