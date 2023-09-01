@@ -21,7 +21,7 @@
     // .catch( error=>{
     //     console.log(error);
     // })
-   
+
     (async ()=>{
         try{
             const res = await fetch('https://jsonplaceholder.typicode.com/posts/1/comments');
@@ -37,7 +37,7 @@
                     `
                 });
                 document.getElementById('api').innerHTML = crd;
-        
+
         }catch(error){
             console.log(error);
         }
@@ -63,7 +63,7 @@ const addDetails = (e) =>{
         To: document.getElementById('to').value,
         Date: document.getElementById('date').value
     }
-         
+
        if(detail.from =="" && detail.from=="" && detail.Date ==""){
             //  !details.push(detail)
              fromErr.innerHTML ="*Enter To from and Date";
@@ -73,7 +73,7 @@ const addDetails = (e) =>{
         fromErr.innerHTML="";
      }
 
-     
+
      if(detail.To == "" && detail.Date== "" ){
         fromErr.innerHTML = "*enter to and date ";
         fromErr.style.color = "red"
@@ -81,7 +81,7 @@ const addDetails = (e) =>{
     }else{
         fromErr.innerHTML =" "
     }
-      
+
     if(detail.from == "" && detail.To== "" ){
         fromErr.innerHTML = "*enter from and To ";
         fromErr.style.color = "red"
@@ -133,9 +133,9 @@ const addDetails = (e) =>{
        }
 
        api();
-    
+
 }
-   
+
 
 function prev(){
     if(details != 0){
@@ -153,7 +153,7 @@ function showCard(){
 
 
     for(var i = 0 ;i<details.length;i++){
-       
+
         html +=`
         <div class="Bblock">
           <p>
@@ -164,10 +164,10 @@ function showCard(){
         </div>
         `
     }
-       
+
      let datael = document.getElementById('firstOne');
     datael.innerHTML= html;
- 
+
         console.log(details)
 
 }
@@ -216,36 +216,13 @@ function myFunction(){
     console.log(Today)
 
 
-// function setError(id, error){
-//      element= document.getElementById(id)
-//     //  Element.innerHTML = error;
-//       element.getElementsByClassName('msgdisplay').innerHTML = error
-
-// }
-
-// function validFrom(){
-//     var fname = document.forms['myForm']['from1'].value;
-//     if(fname == ""){
-//         setError("fname", "enetr from detail")
-//     }
-
-//     var fTo =  document.froms['myForm']['to1'].value;
-//     if(fTo == ""){
-//         setError("fTo", "enter To details")
-//     }
-
-//     console.log(fTo)
-// }
-
-
-function clr(){
+    function clr() {
     details = [];
     console.log(details);
     showCard();
     document.getElementById('form1').reset();
-
-   document.getElementById('api').innerHTML = "";
+    document.getElementById('api').innerHTML = "";
 
 }
 
- 
+
