@@ -226,3 +226,37 @@ function myFunction(){
 }
 
 
+
+//implemented in class in colsole 
+class employee{
+
+    constructor(name, id, email){
+        this.name = name;
+        this.id = id;
+        this.email= email;
+    }
+
+     requestAcc(){
+        console.log(this.name + "has request access to the system id: "+ this.id) 
+    }
+
+      punch(){
+        console.log(this.id + "entered") 
+    }
+
+    getmail(){
+        console.log(this.email)
+    }
+
+    onleave(){
+        console.log(  this.id+"is on leave") 
+    }
+}
+
+let mehul =  new employee("mehul",123456,"mehuldarshni42@gmail.com");
+mehul.requestAcc();
+console.log(mehul);
+
+let employee2  =  new employee("vardhan", 873887, "vardhan@gmail.com")
+console.log(employee2);
+
